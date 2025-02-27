@@ -2,10 +2,10 @@
   stdenv,
   lib,
 }: let
-  awesome = ./awesome;
+  awesome = ./src;
 in
   stdenv.mkDerivation {
-    pname = "tux-awesome-wm-config";
+    pname = "tawm";
     version = "0.1.0";
 
     buildCommand = ''
@@ -14,7 +14,7 @@ in
     '';
 
     meta = with lib; {
-      description = "tux's awesome-wm config";
+      description = "tux's awesomeWM config";
       homepage = "https://tux.rs";
       platforms = platforms.all;
       license = licenses.gpl3;
