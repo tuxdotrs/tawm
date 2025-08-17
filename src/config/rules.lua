@@ -60,6 +60,11 @@ ruled.client.connect_signal("request::rules", function()
   })
 
   ruled.client.append_rule({
+    rule = { class = "brave-browser" },
+    properties = { screen = 1, tag = "3" },
+  })
+
+  ruled.client.append_rule({
     rule = { class = "Thunar" },
     properties = { screen = 1, tag = "3" },
   })
