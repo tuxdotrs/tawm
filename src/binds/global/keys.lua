@@ -54,7 +54,7 @@ awful.keyboard.append_global_keybindings({
     awful.spawn("GalaxyBudsClient")
   end, { description = "open galaxy buds client", group = "launcher" }),
 
-  awful.key({ modkey }, "t", function()
+  awful.key({ modkey }, "f", function()
     awful.spawn(apps.file_explorer)
   end, { description = "open file explorer", group = "launcher" }),
 
